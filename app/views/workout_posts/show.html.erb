@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @workout_post.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @workout_post.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @workout_post.user %>
+</p>
+
+<%= link_to 'Edit', edit_workout_post_path(@workout_post) %> |
+<%= link_to 'Back', workout_posts_path %>
